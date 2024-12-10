@@ -1,18 +1,4 @@
-<!-- <!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/brands.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shin platform</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html> -->
-
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js " lang="en">
 
 <head>
@@ -22,15 +8,18 @@
     <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
 
     <title>:: Shin ::</title>
-    <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon-->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/dropzone/dropzone.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap-select/css/bootstrap-select.css" />
     <!-- Custom Css -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/color_skins.css">
 </head>
 
-<body class="theme-purple">
+<body class="theme-blush">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
@@ -48,8 +37,8 @@
         <div class="col-12">
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="blank.html"><img src="assets/images/logo.svg" width="30"
-                        alt="Compass"><span class="m-l-10">Shin</span></a>
+                <a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" width="30"
+                        alt="Compass"><span class="m-l-10">Estate</span></a>
             </div>
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i
@@ -218,6 +207,7 @@
 
     <!-- Left Sidebar -->
     <aside id="leftsidebar" class="sidebar">
+        <!-- Menu -->
         <div class="menu">
             <ul class="list">
                 <li>
@@ -226,7 +216,7 @@
                                     alt="User"></a></div>
                         <div class="detail">
                             <h4>Michael</h4>
-                            <small>Agent</small>
+                            <small>UI UX Designer</small>
                         </div>
                         <a href="events.html" title="Events"><i class="zmdi zmdi-calendar"></i></a>
                         <a href="mail-inbox.html" title="Inbox"><i class="zmdi zmdi-email"></i></a>
@@ -235,39 +225,42 @@
                         <a href="sign-in.html" title="Sign out"><i class="zmdi zmdi-power"></i></a>
                     </div>
                 </li>
-                <li class="header">MAIN</li>
-                
-               
-               
+                <li class="header">MAIN NAVIGATION</li>
+                <li><a href="index.html"><i class="zmdi zmdi-home"></i><span>Home</span> </a> </li>
+                <li><a href="blog-dashboard.html"><i class="zmdi zmdi-blogger"></i><span>Blog Dashboard</span> </a>
+                </li>
+                <li class="active open"><a href="blog-post.html"><i class="zmdi zmdi-plus-circle"></i><span>New
+                            Post</span> </a> </li>
+                <li><a href="blog-list.html"><i class="zmdi zmdi-sort-amount-desc"></i><span>Blog List</span> </a> </li>
+                <li><a href="blog-grid.html"><i class="zmdi zmdi-grid"></i><span>Blog Grid</span> </a> </li>
+                <li><a href="blog-details.html"><i class="zmdi zmdi-label-alt"></i><span>Blog Single</span> </a> </li>
+
+                <li class="header">CATEGORIES</li>
+                <li><a href="javascript:void(0);" class="waves-effect waves-block"><i
+                            class="zmdi zmdi-label col-green"></i><span>Web Design</span></a></li>
                 <li><a href="javascript:void(0);" class="menu-toggle"><i
-                            class="zmdi zmdi-accounts-outline"></i><span>Agents</span> </a>
+                            class="zmdi zmdi-label col-red"></i><span>Photography</span> </a>
                     <ul class="ml-menu">
-                        <li><a href="agent.html">All Agents</a></li>
-                        <li><a href="add-agent.html">Add Agent</a></li>
-                        <li><a href="profile.html">Agent Profile</a></li>
-                        <li><a href="invoices.html">Agent Invoice</a></li>
+                        <li><a href="javascript:void(0);">Wild</a> </li>
+                        <li><a href="javascript:void(0);">Marriage</a> </li>
                     </ul>
                 </li>
-               
-                <li><a href="reports.html"><i class="zmdi zmdi-file-text"></i><span>Reports</span></a></li>
-                <li> <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-apps"></i><span>App</span>
-                    </a>
+                <li><a href="javascript:void(0);" class="menu-toggle"><i
+                            class="zmdi zmdi-label col-amber"></i><span>Technology</span> </a>
                     <ul class="ml-menu">
-                        <li><a href="mail-inbox.html">Inbox</a></li>
-                        <li><a href="chat.html">Chat</a></li>
-                        <li><a href="events.html">Calendar</a></li>
-                        <li><a href="file-dashboard.html">File Manager</a></li>
-                        <li><a href="contact.html">Contact list</a></li>
-                        <li><a href="blog-dashboard.html">Blog</a></li>
+                        <li><a href="javascript:void(0);">UI UX Design</a> </li>
+                        <li><a href="javascript:void(0);">Android</a> </li>
+                        <li><a href="javascript:void(0);">iOS</a> </li>
+                        <li><a href="javascript:void(0);">Wordpress</a> </li>
                     </ul>
                 </li>
-                
-                
-                
-              
-               
+                <li><a href="javascript:void(0);" class="waves-effect waves-block"><i
+                            class="zmdi zmdi-label col-purple"></i><span>Lifestyle</span></a></li>
+                <li><a href="javascript:void(0);" class="waves-effect waves-block"><i
+                            class="zmdi zmdi-label col-lime"></i><span>Sports</span></a></li>
             </ul>
         </div>
+        <!-- #Menu -->
     </aside>
 
     <!-- Right Sidebar -->
@@ -291,7 +284,7 @@
                             <li data-theme="blue">
                                 <div class="blue"></div>
                             </li>
-                            <li data-theme="cyan" class="active">
+                            <li data-theme="cyan">
                                 <div class="cyan"></div>
                             </li>
                             <li data-theme="green">
@@ -300,7 +293,7 @@
                             <li data-theme="orange">
                                 <div class="orange"></div>
                             </li>
-                            <li data-theme="blush">
+                            <li data-theme="blush" class="active">
                                 <div class="blush"></div>
                             </li>
                         </ul>
@@ -742,33 +735,70 @@
         </div>
     </div>
 
-    <!-- Main Content -->
-    <section class="content">
+    <section class="content blog-page">
         <div class="block-header">
             <div class="row">
                 <div class="col-lg-7 col-md-6 col-sm-12">
-                    <h2>Stater Page
-                        <small class="text-muted">Welcome to Compass</small>
+                    <h2>New Post
+                        <small>Welcome to Compass</small>
                     </h2>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12">
-                    <button class="btn btn-primary btn-icon btn-round hidden-sm-down float-right m-l-10" type="button">
-                        <i class="zmdi zmdi-plus"></i>
-                    </button>
                     <ul class="breadcrumb float-md-right">
-                        <li class="breadcrumb-item"><a href="blank.html"><i class="zmdi zmdi-home"></i> Compass</a></li>
-                        <li class="breadcrumb-item"><a href="javascript:void(0);">Sample Pages</a></li>
-                        <li class="breadcrumb-item active">Stater Page</li>
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> Compass</a></li>
+                        <li class="breadcrumb-item"><a href="blog-dashboard.html">Blog</a></li>
+                        <li class="breadcrumb-item active">New Post</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row clearfix">
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="body">
-                            <h4>Stater page</h4>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Blog title" />
+                            </div>
+                            <select class="form-control show-tick">
+                                <option>Select Category --</option>
+                                <option>Web Design</option>
+                                <option>Photography</option>
+                                <option>Technology</option>
+                                <option>Lifestyle</option>
+                                <option>Sports</option>
+                            </select>
+                            <form action="/" id="frmFileUpload" class="dropzone m-b-20 m-t-20" method="post"
+                                enctype="multipart/form-data">
+                                <div class="dz-message">
+                                    <div class="drag-icon-cph"> <i class="material-icons">touch_app</i> </div>
+                                    <h3>Drop files here or click to upload.</h3>
+                                    <em>(This is just a demo dropzone. Selected files are <strong>not</strong> actually
+                                        uploaded.)</em>
+                                </div>
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="body">
+                            <textarea id="ckeditor">
+                            <h2>WYSIWYG Editor</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper sapien non nisl facilisis bibendum in quis tellus. Duis in urna bibendum turpis pretium fringilla. Aenean neque velit, porta eget mattis ac, imperdiet quis nisi. Donec non dui et tortor vulputate luctus. Praesent consequat rhoncus velit, ut molestie arcu venenatis sodales.</p>
+                            <h3>Lacinia</h3>
+                            <ul>
+                                <li>Suspendisse tincidunt urna ut velit ullamcorper fermentum.</li>
+                                <li>Nullam mattis sodales lacus, in gravida sem auctor at.</li>
+                                <li>Praesent non lacinia mi.</li>
+                                <li>Mauris a ante neque.</li>
+                                <li>Aenean ut magna lobortis nunc feugiat sagittis.</li>
+                            </ul>
+                            <h3>Pellentesque adipiscing</h3>
+                            <p>Maecenas quis ante ante. Nunc adipiscing rhoncus rutrum. Pellentesque adipiscing urna mi, ut tempus lacus ultrices ac. Pellentesque sodales, libero et mollis interdum, dui odio vestibulum dolor, eu pellentesque nisl nibh quis nunc. Sed porttitor leo adipiscing venenatis vehicula. Aenean quis viverra enim. Praesent porttitor ut ipsum id ornare.</p>
+                        </textarea>
+                            <button type="button" class="btn btn-primary btn-round waves-effect m-t-20">Post</button>
                         </div>
                     </div>
                 </div>
@@ -779,7 +809,11 @@
     <script src="assets/bundles/libscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
     <script src="assets/bundles/vendorscripts.bundle.js"></script> <!-- Lib Scripts Plugin Js -->
 
-    <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <script src="assets/plugins/dropzone/dropzone.js"></script> <!-- Dropzone Plugin Js -->
+    <script src="assets/plugins/ckeditor/ckeditor.js"></script> <!-- Ckeditor -->
+
+    <script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
+    <script src="assets/js/pages/forms/editors.js"></script>
 </body>
 
 </html>
